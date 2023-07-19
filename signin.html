@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Page</title>
+    <link rel="stylesheet" href="signin.css" />
+  </head>
+  <body>
+    <style>
+        nav {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid grey;
+  background-color: rgb(214, 255, 80);
+  height: 50px;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(5, 5, 16);
+}
+#signin_div {
+  margin:auto ;
+  margin-top: 5%;
+  padding: 2%;
+  width: 15%;
+  display:grid ;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: rgb(18, 124, 113);
+}
+#signin {
+  background-color: rgb(130, 139, 34);
+}
+#signin_div h1 {
+  text-align: center;
+  color: rgb(18, 16, 21);
+}
+    </style>
+    <nav>
+      <a href="/">Home</a>
+      <a href="signin.html">Sign in</a>
+      <a href="signup.html">Sign up</a>
+    </nav>
+    <img src="https://th.bing.com/th/id/R.85a76538c241dfac32c971e3e4f3e0c4?rik=qmuN1DfEnA3vzA&riu=http%3a%2f%2fwww.griswoldhomecare.com%2fsub%2f49822%2fimages%2fblood-donation.jpg&ehk=pSKnriikE%2fME5YBdqKLpsNkOgAiEg9tO1gafwPTGrp4%3d&risl=&pid=ImgRaw&r=0" width="100%" height="50%" style="border-radius: 100px">
+    <div id="signin_div">
+      <h1>Sign in</h1>
+      <input type="name" placeholder="Enter name" id="name" />
+      <input type="text" placeholder="Enter blood group" id="blood" />
+      <button id="signin">Sign in</button>
+    </div>
+    <script src="signin.js"></script>
+  </body>
+</html>
